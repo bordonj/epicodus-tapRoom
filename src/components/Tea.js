@@ -18,12 +18,12 @@ function Tea(props){
 
 Tea.propTypes = {
   whenTeaClicked: PropTypes.func,
-  name = PropTypes.string.isRequired,
-  brand = PropTypes.string.isRequired,
-  price = PropTypes.string.isRequired,
-  flavor = PropTypes.string.isRequired,
-  pints = PropTypes.string.isRequired,
-  id = PropTypes.string.isRequired
+  name: PropTypes.string.isRequired,
+  brand: PropTypes.string.isRequired,
+  price: PropTypes.string.isRequired,
+  flavor: PropTypes.string.isRequired,
+  pints: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired
 }
 
 export default Tea;
