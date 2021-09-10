@@ -14,6 +14,7 @@ function ReusableForm(props) {
           type='text'
           name='name'
           placeholder='Name' 
+          required
           // defaultValue={startingName}
         />
         <input
@@ -21,6 +22,7 @@ function ReusableForm(props) {
           type='text'
           name='brand'
           placeholder='brand' 
+          required
           // defaultValue={startingDescription}
         />
         <input
@@ -28,6 +30,7 @@ function ReusableForm(props) {
           type='text'
           name='price'
           placeholder='price' 
+          required
           // defaultValue={startingQuantity}
         />
         <input
@@ -35,6 +38,7 @@ function ReusableForm(props) {
           type='string'
           name='flavor'
           placeholder='flavor' 
+          required
           // defaultValue={startingQuantity}
         />
         <input
@@ -42,6 +46,7 @@ function ReusableForm(props) {
           type='string'
           name='pints'
           placeholder='pints' 
+          required
           // defaultValue={startingQuantity}
         />
           <button className="btn btn-warning" type='submit'>{props.buttonText}</button>
