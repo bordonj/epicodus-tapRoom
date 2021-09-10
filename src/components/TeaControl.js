@@ -42,6 +42,15 @@ class TeaControl extends React.Component {
     });
   }
 
+  handleSellingTea = (tea) => {
+    if (tea.pints > 0) {
+      tea.pints--;
+    }
+    this.setState({
+      selectedTea: tea
+    });
+  }
+
   render(){
     let empty = null;
     let buttonText = null;
@@ -56,6 +65,7 @@ class TeaControl extends React.Component {
       currentlyVisibleState = 
       <TeaDetail
         tea = {this.state.selectedTea}
+        onClickingSell = {this.handleSellingTea}
       />
       buttonText = "Return to Tea List";
     } else if (this.state.formVisibleOnPage) {
