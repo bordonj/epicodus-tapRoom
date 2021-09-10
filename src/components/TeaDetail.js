@@ -9,16 +9,18 @@ function TeaDetail(props){
 
   return (
     <>
-      <h2><b>Name:</b> {tea.name}</h2>
-      <h3><b>Brand:</b> {tea.brand}</h3>
-      <h3><b>Price:</b> {tea.price}</h3>
-      <h3><b>Flavor:</b> {tea.flavor}</h3>
-      <h3><b>Pints Left:</b> {pints}</h3>
-      <button
-        className = "btn btn-warning"
-        onClick = {() => onClickingSell(tea)}>
-          Sell 1 Pint
-      </button>
+      <div class="tea-form">
+        <h2><b>Name:</b> {tea.name}</h2>
+        <h3><b>Brand:</b> {tea.brand}</h3>
+        <h3><b>Price:</b> {tea.price}</h3>
+        <h3><b>Flavor:</b> {tea.flavor}</h3>
+        <h3><b>Pints Left:</b> {pints}</h3>
+        <button
+          className = "btn btn-warning"
+          onClick = {() => onClickingSell(tea)}>
+            Sell 1 Pint
+        </button>
+      </div>
 
     </>
   )
