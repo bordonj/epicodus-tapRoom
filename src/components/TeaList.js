@@ -12,6 +12,7 @@ function TeaList(props){
           brand = {tea.brand}
           price = {tea.price}
           flavor = {tea.flavor}
+          pints = {tea.pints}
           id = {tea.id}
           key = {tea.id}
         
