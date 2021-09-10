@@ -3,11 +3,12 @@ import Tea from "./Tea";
 import PropTypes from 'prop-types';
 
 function TeaList(props){
+  console.log('tea list', props)
   return(
     <>
       {props.teaList.map((tea) => 
         <Tea
-          whenTeaClicked = {tea.onTeaSelection}
+          whenTeaClicked = {props.onTeaSelection}
           name = {tea.name}
           brand = {tea.brand}
           price = {tea.price}
