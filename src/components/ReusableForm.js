@@ -16,18 +16,32 @@ function ReusableForm(props) {
           placeholder='Name' 
           // defaultValue={startingName}
         />
-        <textarea
+        <input
           className="form-control"
           type='text'
-          name='description'
-          placeholder='description' 
+          name='brand'
+          placeholder='brand' 
           // defaultValue={startingDescription}
         />
         <input
           className="form-control"
-          type='number'
-          name='quantity'
-          placeholder='quantity' 
+          type='text'
+          name='price'
+          placeholder='price' 
+          // defaultValue={startingQuantity}
+        />
+        <input
+          className="form-control"
+          type='string'
+          name='flavor'
+          placeholder='flavor' 
+          // defaultValue={startingQuantity}
+        />
+        <input
+          className="form-control"
+          type='string'
+          name='pints'
+          placeholder='pints' 
           // defaultValue={startingQuantity}
         />
           <button className="btn btn-warning" type='submit'>{props.buttonText}</button>
