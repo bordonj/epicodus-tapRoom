@@ -8,49 +8,51 @@ function ReusableForm(props) {
 
   return (
     <>
-      <form onSubmit={props.formSubmissionHandler}>
-        <input
-          className="form-control"
-          type='text'
-          name='name'
-          placeholder='Name' 
-          required
-          // defaultValue={startingName}
-        />
-        <input
-          className="form-control"
-          type='text'
-          name='brand'
-          placeholder='brand' 
-          required
-          // defaultValue={startingDescription}
-        />
-        <input
-          className="form-control"
-          type='text'
-          name='price'
-          placeholder='price' 
-          required
-          // defaultValue={startingQuantity}
-        />
-        <input
-          className="form-control"
-          type='string'
-          name='flavor'
-          placeholder='flavor' 
-          required
-          // defaultValue={startingQuantity}
-        />
-        <input
-          className="form-control"
-          type='string'
-          name='pints'
-          placeholder='pints' 
-          required
-          // defaultValue={startingQuantity}
-        />
-          <button className="btn btn-warning" type='submit'>{props.buttonText}</button>
-      </form>
+      <div class='tea-form'>
+        <form onSubmit={props.formSubmissionHandler}>
+          <input
+            className="form-control"
+            type='text'
+            name='name'
+            placeholder='Name' 
+            required
+            // defaultValue={startingName}
+          />
+          <input
+            className="form-control"
+            type='text'
+            name='brand'
+            placeholder='brand' 
+            required
+            // defaultValue={startingDescription}
+          />
+          <input
+            className="form-control"
+            type='text'
+            name='price'
+            placeholder='price' 
+            required
+            // defaultValue={startingQuantity}
+          />
+          <input
+            className="form-control"
+            type='string'
+            name='flavor'
+            placeholder='flavor' 
+            required
+            // defaultValue={startingQuantity}
+          />
+          <input
+            className="form-control"
+            type='string'
+            name='pints'
+            placeholder='pints' 
+            required
+            // defaultValue={startingQuantity}
+          />
+            <button className="btn btn-warning" type='submit'>{props.buttonText}</button>
+        </form>
+      </div>
     </>
   );
 }
