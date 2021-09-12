@@ -37,6 +37,8 @@ User stories:
 
 ## Plan/Component Diagram
 <img src="TeaDiagram.png">
+
+Initial MVP that has CREATE and READ functionality
 ## Setup/Installation Requirements
 * Clone this project into your preferred directory
 * In that directory, there should now be a directory labeled "epicodus-tapRoom"
