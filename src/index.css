@@ -35,3 +35,7 @@ input {
 #delete {
   float: right;
 }
+
+button {
+  margin: 5px;
+}
