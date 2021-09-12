@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 
 function ReusableForm(props) {
-  // const startingName = props.merch ? props.merch.name : '';
-  // const startingDescription = props.merch ? props.merch.description : '';
-  // const startingQuantity = props.merch? props.merch.quantity : '';
+  const startingName = props.tea ? props.tea.name : '';
+  const startingBrand = props.tea ? props.tea.brand : '';
+  const startingPrice = props.tea? props.tea.price : '';
+  const startingFlavor = props.tea? props.tea.flavor : '';
+  const startingPints = props.tea? props.tea.pints : '';
 
   return (
     <>
@@ -14,9 +16,9 @@ function ReusableForm(props) {
             className="form-control"
             type='text'
             name='name'
-            placeholder='Name' 
+            placeholder='name' 
             required
-            // defaultValue={startingName}
+            defaultValue={startingName}
           />
           <input
             className="form-control"
@@ -24,7 +26,7 @@ function ReusableForm(props) {
             name='brand'
             placeholder='brand' 
             required
-            // defaultValue={startingDescription}
+            defaultValue={startingBrand}
           />
           <input
             className="form-control"
@@ -32,7 +34,7 @@ function ReusableForm(props) {
             name='price'
             placeholder='price' 
             required
-            // defaultValue={startingQuantity}
+            defaultValue={startingPrice}
           />
           <input
             className="form-control"
@@ -40,7 +42,7 @@ function ReusableForm(props) {
             name='flavor'
             placeholder='flavor' 
             required
-            // defaultValue={startingQuantity}
+            defaultValue={startingFlavor}
           />
           <input
             className="form-control"
@@ -48,7 +50,7 @@ function ReusableForm(props) {
             name='pints'
             placeholder='pints' 
             required
-            // defaultValue={startingQuantity}
+            defaultValue={startingPints}
           />
             <button className="btn btn-warning" type='submit'>{props.buttonText}</button>
         </form>
