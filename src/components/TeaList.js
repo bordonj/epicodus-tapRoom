@@ -3,7 +3,6 @@ import Tea from "./Tea";
 import PropTypes from 'prop-types';
 
 function TeaList(props){
-  console.log('tea list', props)
   return(
     <>
       {props.teaList.map((tea) => 
