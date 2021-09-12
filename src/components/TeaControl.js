@@ -11,6 +11,7 @@ class TeaControl extends React.Component {
       formVisibleOnPage: false,
       masterTeaList: [],
       selectedTea: null,
+      editing: false,
     };
   }
 
@@ -60,6 +61,12 @@ class TeaControl extends React.Component {
     });
   }
 
+  handleEditClick = () => {
+    this.setState({
+      editing: true
+    });
+  }
+
   render(){
     let empty = null;
     let buttonText = null;
@@ -75,6 +82,7 @@ class TeaControl extends React.Component {
       <TeaDetail
         tea = {this.state.selectedTea}
         onClickingDelete = {this.handleDeletingTea}
+        onClickingEdit = {this.handleEditClick}
         onClickingSell = {this.handleSellingTea}
       />
       buttonText = "Return to Tea List";

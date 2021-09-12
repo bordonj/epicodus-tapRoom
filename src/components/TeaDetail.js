@@ -6,8 +6,6 @@ function TeaDetail(props){
 
   let pints = tea.pints === 0 ? "Out of Stock" : tea.pints;
 
-  console.log('this', this)
-
 
   return (
     <>
@@ -21,6 +19,11 @@ function TeaDetail(props){
           className = "btn btn-warning"
           onClick = {() => onClickingSell(tea)}>
             Sell 1 Pint
+        </button>
+        <button
+          className = "btn btn-success"
+          onClick = {props.onClickingEdit}>
+            Update Tea
         </button>
         <button
           className = "btn btn-danger"
@@ -38,7 +41,8 @@ function TeaDetail(props){
 TeaDetail.propTypes = {
   tea: PropTypes.object,
   onClickingSell: PropTypes.func,
-  onClickingDelete: PropTypes.func
+  onClickingDelete: PropTypes.func,
+  onClickingEdit: PropTypes.func,
 };
 
 export default TeaDetail;
