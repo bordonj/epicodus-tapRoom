@@ -2,6 +2,7 @@ import React from "react";
 import NewTeaForm from "./NewTeaForm";
 import TeaList from "./TeaList";
 import TeaDetail from "./TeaDetail";
+import EditTeaForm from "./EditTeaForm";
 
 class TeaControl extends React.Component {
   
@@ -20,6 +21,7 @@ class TeaControl extends React.Component {
       this.setState({
         formVisibleOnPage: false,
         selectedTea: null,
+        editing: false,
       });
     } else {
       this.setState(prevState => ({
@@ -67,6 +69,17 @@ class TeaControl extends React.Component {
     });
   }
 
+  handleEditingTeaInList = (teaToEdit) => {
+    const editedMasterTeaList = this.state.masterTeaList
+      .filter(tea => tea.id !== this.state.selectedTea.id)
+      .concat(teaToEdit);
+    this.setState({
+      masterTeaList: editedMasterTeaList,
+      editing: false,
+      selectedTea: null
+    });
+  }
+
   render(){
     let empty = null;
     let buttonText = null;
@@ -77,7 +90,13 @@ class TeaControl extends React.Component {
       buttonText = "Add new Tea";
     }
 
-    if (this.state.selectedTea != null) {
+    if (this.state.editing) {
+      currentlyVisibleState = <EditTeaForm
+        tea = {this.state.selectedTea}
+        onEditTea = {this.handleEditingTeaInList}
+      />
+      buttonText = "Return to Tea List";
+    } else if (this.state.selectedTea != null) {
       currentlyVisibleState = 
       <TeaDetail
         tea = {this.state.selectedTea}
