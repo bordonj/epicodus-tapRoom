@@ -2,9 +2,11 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 function TeaDetail(props){
-  const {tea, onClickingSell} = props;
+  const {tea, onClickingSell, onClickingDelete} = props;
 
   let pints = tea.pints === 0 ? "Out of Stock" : tea.pints;
+
+  console.log('this', this)
 
 
   return (
@@ -20,6 +22,12 @@ function TeaDetail(props){
           onClick = {() => onClickingSell(tea)}>
             Sell 1 Pint
         </button>
+        <button
+          className = "btn btn-danger"
+          id = "delete"
+          onClick = {() => onClickingDelete(tea.id)}>
+            Delete Tea
+        </button>
       </div>
 
     </>
@@ -30,6 +38,7 @@ function TeaDetail(props){
 TeaDetail.propTypes = {
   tea: PropTypes.object,
   onClickingSell: PropTypes.func,
+  onClickingDelete: PropTypes.func
 };
 
 export default TeaDetail;

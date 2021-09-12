@@ -42,6 +42,15 @@ class TeaControl extends React.Component {
     });
   }
 
+  handleDeletingTea = (id) => {
+    const newMasterTeaList = this.state.masterTeaList
+      .filter(tea => tea.id !== id);
+    this.setState({
+      masterTeaList: newMasterTeaList,
+      selectedTea: null
+    });
+  }
+
   handleSellingTea = (tea) => {
     if (tea.pints > 0) {
       tea.pints--;
@@ -65,6 +74,7 @@ class TeaControl extends React.Component {
       currentlyVisibleState = 
       <TeaDetail
         tea = {this.state.selectedTea}
+        onClickingDelete = {this.handleDeletingTea}
         onClickingSell = {this.handleSellingTea}
       />
       buttonText = "Return to Tea List";
