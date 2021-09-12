@@ -10,7 +10,7 @@ function ReusableForm(props) {
 
   return (
     <>
-      <div class='tea-form'>
+      <div className='tea-form'>
         <form onSubmit={props.formSubmissionHandler}>
           <input
             className="form-control"
