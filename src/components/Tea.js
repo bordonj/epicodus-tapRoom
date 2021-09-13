@@ -2,10 +2,9 @@ import React from "react";
 import PropTypes from 'prop-types';
 
 function Tea(props){
-  console.log('props', props)
   return (
     <>
-      <div onClick = {() => props.whenTeaClicked(props.id)}>
+      <div className="tea" onClick = {() => props.whenTeaClicked(props.id)}>
         <h2><b>Name:</b> {props.name}</h2>
         <h3><b>Brand:</b> {props.brand}</h3>
         <h3><b>Price:</b> {props.price}</h3>
