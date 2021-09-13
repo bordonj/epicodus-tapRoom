@@ -47,8 +47,7 @@ Initial MVP that has CREATE and READ functionality
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Currently no known bugs._
 
 ## License
 
