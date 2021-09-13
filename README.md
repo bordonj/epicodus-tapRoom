@@ -36,13 +36,13 @@ User stories:
   - pints should not go below 0
 
 ## Plan/Component Diagram
+Initial MVP that has CREATE and READ functionality
 <img src="TeaDiagram.png">
 
-Initial MVP that has CREATE and READ functionality
-
-<img src="CRUD-tea.png">
 
 Final product with CRUD
+<img src="CRUD-tea.png">
+
 ## Setup/Installation Requirements
 * Clone this project into your preferred directory
 * In that directory, there should now be a directory labeled "epicodus-tapRoom"
