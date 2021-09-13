@@ -27,7 +27,7 @@ User stories:
   - `name`
   - `brand`
   - `price`
-  -`flavor`
+  - `flavor`
 - as a user, I want to submit a form to add a new tea to a list
 - as a user, I want to be able to click on a tea to see its detail page
 - as a user, I want to see how many pints are left in a tea urn (holds 32 pints)
