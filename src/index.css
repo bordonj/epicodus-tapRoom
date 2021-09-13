@@ -39,3 +39,8 @@ input {
 button {
   margin: 5px;
 }
+
+.tea:hover {
+  background-color: rgb(116, 105, 105);
+  text-shadow: 2px 2px black;
+}
