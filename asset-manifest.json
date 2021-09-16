@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/epicodus-tapRoom/static/css/main.114686d0.chunk.css",
+    "main.js": "/epicodus-tapRoom/static/js/main.7f282d0e.chunk.js",
+    "main.js.map": "/epicodus-tapRoom/static/js/main.7f282d0e.chunk.js.map",
+    "runtime-main.js": "/epicodus-tapRoom/static/js/runtime-main.167bbf8c.js",
+    "runtime-main.js.map": "/epicodus-tapRoom/static/js/runtime-main.167bbf8c.js.map",
+    "static/css/2.28bb0c3d.chunk.css": "/epicodus-tapRoom/static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.a1f6ca5d.chunk.js": "/epicodus-tapRoom/static/js/2.a1f6ca5d.chunk.js",
+    "static/js/2.a1f6ca5d.chunk.js.map": "/epicodus-tapRoom/static/js/2.a1f6ca5d.chunk.js.map",
+    "static/js/3.2dc7c71e.chunk.js": "/epicodus-tapRoom/static/js/3.2dc7c71e.chunk.js",
+    "static/js/3.2dc7c71e.chunk.js.map": "/epicodus-tapRoom/static/js/3.2dc7c71e.chunk.js.map",
+    "index.html": "/epicodus-tapRoom/index.html",
+    "static/css/2.28bb0c3d.chunk.css.map": "/epicodus-tapRoom/static/css/2.28bb0c3d.chunk.css.map",
+    "static/css/main.114686d0.chunk.css.map": "/epicodus-tapRoom/static/css/main.114686d0.chunk.css.map",
+    "static/js/2.a1f6ca5d.chunk.js.LICENSE.txt": "/epicodus-tapRoom/static/js/2.a1f6ca5d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.167bbf8c.js",
+    "static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.a1f6ca5d.chunk.js",
+    "static/css/main.114686d0.chunk.css",
+    "static/js/main.7f282d0e.chunk.js"
+  ]
+}
