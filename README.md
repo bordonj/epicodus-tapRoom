@@ -20,7 +20,7 @@
 ## Description
 This is a Tap Room where a Boba Bar can track its tea storage!
 
-It will at the minimum, have CREATE and READ functionality. And if am succesfully ambitious, will have UPDATE and DELETE functionality.
+It will at the minimum, have CREATE and READ functionality. And if am successfully ambitious, will have UPDATE and DELETE functionality.
 
 User stories:
 - as a user, I want to see a list/menu of all available teas. For each tea, I want to see its
