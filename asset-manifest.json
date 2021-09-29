@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/epicodus-tapRoom/static/css/main.114686d0.chunk.css",
-    "main.js": "/epicodus-tapRoom/static/js/main.7f282d0e.chunk.js",
-    "main.js.map": "/epicodus-tapRoom/static/js/main.7f282d0e.chunk.js.map",
+    "main.js": "/epicodus-tapRoom/static/js/main.961ef3de.chunk.js",
+    "main.js.map": "/epicodus-tapRoom/static/js/main.961ef3de.chunk.js.map",
     "runtime-main.js": "/epicodus-tapRoom/static/js/runtime-main.167bbf8c.js",
     "runtime-main.js.map": "/epicodus-tapRoom/static/js/runtime-main.167bbf8c.js.map",
     "static/css/2.28bb0c3d.chunk.css": "/epicodus-tapRoom/static/css/2.28bb0c3d.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.28bb0c3d.chunk.css",
     "static/js/2.a1f6ca5d.chunk.js",
     "static/css/main.114686d0.chunk.css",
-    "static/js/main.7f282d0e.chunk.js"
+    "static/js/main.961ef3de.chunk.js"
   ]
 }
