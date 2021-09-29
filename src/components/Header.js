@@ -12,7 +12,7 @@ function Header(){
           <div className="collapse navbar-collapse show" id="navbarDark">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-Merch">
-                <a className="nav-link active" aria-current="page" href="/">Reset</a>
+                <a className="nav-link active" aria-current="page" href="./">Reset</a>
               </li>
             </ul>
           </div>
